@@ -1,0 +1,16 @@
+# Registry entries are comparison aids, not substitutes for derivation.
+# Replace or remove this example before release.
+
+example_entry:
+  target: "TODO: target or result type"
+  setting: "TODO: model or mathematical setting"
+  assumptions:
+    - "TODO: assumption"
+  result: "TODO: known result, formula, rate, or status"
+  validation_checks:
+    - "TODO: check before applying"
+  warnings:
+    - "TODO: common misuse"
+  status: "example"
+  references:
+    - "TODO: source anchor"
