@@ -1,7 +1,8 @@
 # Reference spec: stat-toolkits-eif
 
-This spec is distilled from `tools/stat-toolkits-eif/`. It is a reference
-example for a derivation/validation toolkit.
+This spec is distilled from the external `stat-toolkits-eif` reference
+repository. It is a self-contained reference example for a derivation/validation
+toolkit.
 
 ## 1. Identity
 

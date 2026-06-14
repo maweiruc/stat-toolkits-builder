@@ -1,7 +1,7 @@
 # Reference spec: stat-toolkits-minimax
 
-This spec is distilled from `tools/stat-toolkits-minimax/`. It is a reference
-example for a proof/rate toolkit.
+This spec is distilled from the external `stat-toolkits-minimax` reference
+repository. It is a self-contained reference example for a proof/rate toolkit.
 
 ## 1. Identity
 

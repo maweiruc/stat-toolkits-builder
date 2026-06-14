@@ -1,6 +1,0 @@
-[submodule "tools/stat-toolkits-minimax"]
-	path = tools/stat-toolkits-minimax
-	url = https://github.com/maweiruc/stat-toolkits-minimax.git
-[submodule "tools/stat-toolkits-eif"]
-	path = tools/stat-toolkits-eif
-	url = https://github.com/maweiruc/stat-toolkits-eif.git

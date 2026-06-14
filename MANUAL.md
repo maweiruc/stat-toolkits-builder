@@ -19,8 +19,8 @@ does not need to be theoretically complete.
 ```text
 Use stat-toolkits-builder to create a v0.1 toolkit for [topic].
 
-Use only tools/stat-toolkits-minimax and tools/stat-toolkits-eif as reference
-examples.
+Use only examples/minimax_toolkit_spec.md and examples/eif_toolkit_spec.md as
+built-in reference examples.
 
 Output the generated toolkit at tools/stat-toolkits-[topic-slug]/.
 First create TOOLKIT_SPEC.md in the generated toolkit, then scaffold the root
@@ -55,11 +55,17 @@ registry.
 
 ## Reference examples
 
-Use `tools/stat-toolkits-minimax/` as the reference for a proof/rate toolkit
-with upper and lower bound ledgers.
+Use `examples/minimax_toolkit_spec.md` as the built-in reference for a
+proof/rate toolkit with upper and lower bound ledgers.
 
-Use `tools/stat-toolkits-eif/` as the reference for a derivation/validation
-toolkit with target triage, regularity checks, and status labels.
+Use `examples/eif_toolkit_spec.md` as the built-in reference for a
+derivation/validation toolkit with target triage, regularity checks, and status
+labels.
+
+Full reference repositories are external and optional:
+
+- https://github.com/maweiruc/stat-toolkits-minimax
+- https://github.com/maweiruc/stat-toolkits-eif
 
 Do not introduce additional reference examples unless they actually exist in
 `tools/`.

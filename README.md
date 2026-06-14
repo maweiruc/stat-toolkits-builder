@@ -44,7 +44,7 @@ Please use stat-toolkits-builder to create a v0.1 toolkit for [topic].
 Output path: tools/stat-toolkits-[topic-slug]/
 
 Requirements:
-1. Use only tools/stat-toolkits-minimax and tools/stat-toolkits-eif as reference examples.
+1. Use only examples/minimax_toolkit_spec.md and examples/eif_toolkit_spec.md as built-in reference examples.
 2. First read README.md, AGENTS.md, and MANUAL.md.
 3. Then read builder/interview_questions.md, builder/toolkit_spec_template.md,
    builder/scaffold_workflow.md, and builder/v0_scaffold_checklist.md.
@@ -72,17 +72,21 @@ Do not create files until you can write a complete TOOLKIT_SPEC.md.
 ```text
 Please use stat-toolkits-builder to create a v0.1 toolkit for [topic].
 Output it to tools/stat-toolkits-[topic-slug]/.
-Only use stat-toolkits-minimax and stat-toolkits-eif as reference examples.
+Only use examples/minimax_toolkit_spec.md and examples/eif_toolkit_spec.md as built-in reference examples.
 First write TOOLKIT_SPEC.md, then scaffold all required files, then run the checklist.
 ```
 
-The two canonical reference toolkits are:
+The two built-in reference specs are:
 
-- `tools/stat-toolkits-minimax/`
-- `tools/stat-toolkits-eif/`
+- `examples/minimax_toolkit_spec.md`
+- `examples/eif_toolkit_spec.md`
 
 They define the target shape: documentation-first, agent-ready, auditable, and
-easy to improve after the first version.
+easy to improve after the first version. The full reference repositories are
+external:
+
+- https://github.com/maweiruc/stat-toolkits-minimax
+- https://github.com/maweiruc/stat-toolkits-eif
 
 ## Factory Goal
 
@@ -147,8 +151,8 @@ and easier to standardize. Rename only after the topic's protocols stabilize.
 builder/       Factory workflow, questions, spec template, checklist, rubric.
 scripts/       Lightweight scaffold automation.
 templates/     Generic v0.1 toolkit scaffold templates.
-examples/      Specs distilled from the two reference toolkits.
-tools/         Existing and future stat-toolkits-* repositories.
+examples/      Self-contained specs distilled from the two reference toolkits.
+tools/         Output location for generated stat-toolkits-* repositories.
 ```
 
 ## What This Factory Does Not Do

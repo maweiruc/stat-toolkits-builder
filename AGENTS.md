@@ -17,12 +17,16 @@ For any request to create or revise a toolkit scaffold, read:
 8. `examples/minimax_toolkit_spec.md`
 9. `examples/eif_toolkit_spec.md`
 
-Use the reference repositories only as examples:
+Use the built-in reference specs as examples:
 
-- `tools/stat-toolkits-minimax/`
-- `tools/stat-toolkits-eif/`
+- `examples/minimax_toolkit_spec.md`
+- `examples/eif_toolkit_spec.md`
 
-Do not edit reference toolkits unless the user explicitly asks.
+The full reference repositories are external and are not required for normal
+builder use:
+
+- https://github.com/maweiruc/stat-toolkits-minimax
+- https://github.com/maweiruc/stat-toolkits-eif
 
 ## Output rule
 
