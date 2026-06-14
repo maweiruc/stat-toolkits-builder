@@ -10,37 +10,6 @@ turn a statistical topic or research task into a strong v0.1 scaffold under:
 tools/stat-toolkits-<topic>/
 ```
 
-The two canonical reference toolkits are:
-
-- `tools/stat-toolkits-minimax/`
-- `tools/stat-toolkits-eif/`
-
-They define the target shape: documentation-first, agent-ready, auditable, and
-easy to improve after the first version.
-
-## Factory Goal
-
-A generated v0.1 toolkit should be incomplete in depth but strong in structure.
-It should include:
-
-- root docs for humans and agents;
-- an agent workflow with task specification, triage, rubrics, and danger zones;
-- a durable problem workflow using `problem.tex`, `notes.md`, and `solution.md`;
-- theory and examples folders ready for expansion;
-- benchmark/trial prompts that make first-day testing possible;
-- optional registry, schema, validator, and tests when the topic has reusable
-  known results.
-
-## Output Rule
-
-Generated toolkits must be created only at:
-
-```text
-tools/stat-toolkits-<topic>/
-```
-
-Do not create a generated toolkit at the repository root.
-
 ## Recommended User Prompts
 
 This builder is currently an agent-driven, semi-automated process. There is no
@@ -86,6 +55,37 @@ Output it to tools/stat-toolkits-[topic-slug]/.
 Only use stat-toolkits-minimax and stat-toolkits-eif as reference examples.
 First write TOOLKIT_SPEC.md, then scaffold all required files, then run the checklist.
 ```
+
+The two canonical reference toolkits are:
+
+- `tools/stat-toolkits-minimax/`
+- `tools/stat-toolkits-eif/`
+
+They define the target shape: documentation-first, agent-ready, auditable, and
+easy to improve after the first version.
+
+## Factory Goal
+
+A generated v0.1 toolkit should be incomplete in depth but strong in structure.
+It should include:
+
+- root docs for humans and agents;
+- an agent workflow with task specification, triage, rubrics, and danger zones;
+- a durable problem workflow using `problem.tex`, `notes.md`, and `solution.md`;
+- theory and examples folders ready for expansion;
+- benchmark/trial prompts that make first-day testing possible;
+- optional registry, schema, validator, and tests when the topic has reusable
+  known results.
+
+## Output Rule
+
+Generated toolkits must be created only at:
+
+```text
+tools/stat-toolkits-<topic>/
+```
+
+Do not create a generated toolkit at the repository root.
 
 ## How To Use
 
