@@ -13,8 +13,28 @@ tools/stat-toolkits-<topic>/
 ## Recommended User Prompts
 
 This builder is currently an agent-driven, semi-automated process. There is no
-one-command scaffold script yet. Use Codex, Claude Code, or another coding agent
-with this repository open.
+fully mature one-command builder yet. Use Codex, Claude Code, or another coding
+agent with this repository open. A lightweight scaffold script is available for
+creating the initial file tree.
+
+### Quick script scaffold
+
+```bash
+python3 scripts/scaffold_toolkit.py \
+  --slug [topic-slug] \
+  --topic "[Human readable topic]" \
+  --primary-object "[what the toolkit helps derive/check/validate]"
+```
+
+This creates:
+
+```text
+tools/stat-toolkits-[topic-slug]/
+```
+
+The script gives a generic v0.1 scaffold. After it runs, use an agent to edit
+`TOOLKIT_SPEC.md`, strengthen the agent protocols, and add topic-specific trial
+tasks.
 
 ### If the topic is clear
 
@@ -89,17 +109,43 @@ Do not create a generated toolkit at the repository root.
 
 ## How To Use
 
-1. Start with `builder/interview_questions.md`.
-2. Convert the answers into `builder/toolkit_spec_template.md`.
-3. Follow `builder/scaffold_workflow.md`.
-4. Copy and customize the files in `templates/`.
-5. Check the result with `builder/v0_scaffold_checklist.md`.
-6. Grade the first scaffold using `builder/quality_rubric.md`.
+1. Optionally run `scripts/scaffold_toolkit.py` to create the initial folder.
+2. Start with `builder/interview_questions.md`.
+3. Convert the answers into `builder/toolkit_spec_template.md` or edit the
+   generated `TOOLKIT_SPEC.md`.
+4. Follow `builder/scaffold_workflow.md`.
+5. Customize the generated files from `templates/`.
+6. Check the result with `builder/v0_scaffold_checklist.md`.
+7. Grade the first scaffold using `builder/quality_rubric.md`.
+
+## File Naming Convention
+
+The v0.1 scaffold intentionally uses generic file names:
+
+```text
+agent/task_spec.md
+agent/triage.md
+theory/intro.md
+examples/registry.yaml
+```
+
+Mature toolkits may later rename files to topic-specific names, as in:
+
+```text
+agent/eif_agent_task_spec.md
+agent/eif_target_triage.md
+theory/semiparametric_influence_function_guide.md
+examples/eif_formula_registry.yaml
+```
+
+The generic names are not a bug. They make the first scaffold faster to create
+and easier to standardize. Rename only after the topic's protocols stabilize.
 
 ## Repository Layout
 
 ```text
 builder/       Factory workflow, questions, spec template, checklist, rubric.
+scripts/       Lightweight scaffold automation.
 templates/     Generic v0.1 toolkit scaffold templates.
 examples/      Specs distilled from the two reference toolkits.
 tools/         Existing and future stat-toolkits-* repositories.

@@ -17,6 +17,17 @@ tools/stat-toolkits-<topic>/
 tools/stat-toolkits-<topic>/TOOLKIT_SPEC.md
 ```
 
+Alternatively, create the initial scaffold with:
+
+```bash
+python3 scripts/scaffold_toolkit.py \
+  --slug <topic> \
+  --topic "<human readable topic>" \
+  --primary-object "<what the toolkit helps derive/check/validate>"
+```
+
+The script creates a starter `TOOLKIT_SPEC.md`; edit it before serious use.
+
 ## 2. Create the output folder
 
 Create only this folder:
@@ -48,6 +59,7 @@ examples/
 problems/latex_inbox/
 scripts/
 tests/
+references/
 ```
 
 ## 4. Replace placeholders
@@ -58,13 +70,20 @@ Replace every placeholder of the form:
 {{TOOLKIT_NAME}}
 {{TOPIC}}
 {{TOPIC_SLUG}}
+{{TOPIC_SLUG_UNDERSCORE}}
 {{PYTHON_PACKAGE}}
 {{CORE_WORKFLOW}}
 {{PRIMARY_OBJECT}}
+{{YEAR}}
+{{AUTHOR}}
 ```
 
 Use topic-specific language. Do not leave unresolved placeholders in generated
 toolkit files.
+
+The v0.1 scaffold uses generic file names such as `agent/task_spec.md` and
+`theory/intro.md`. Mature toolkits may later rename these to topic-specific
+names after the protocols stabilize.
 
 ## 5. Strengthen v0.1 content
 

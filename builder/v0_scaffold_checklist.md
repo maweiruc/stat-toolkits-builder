@@ -8,9 +8,10 @@ Use this checklist before declaring a generated toolkit usable.
 - [ ] No generated toolkit files were placed at repository root.
 - [ ] `TOOLKIT_SPEC.md` exists in the generated toolkit.
 - [ ] Root docs exist: `README.md`, `MANUAL.md`, `TRIAL_GUIDE.md`,
-      `AGENTS.md`, `VERSION.md`, `CHANGELOG.md`, `CONTRIBUTING.md`.
+      `AGENTS.md`, `VERSION.md`, `CHANGELOG.md`, `CONTRIBUTING.md`,
+      `LICENSE`, `.gitignore`.
 - [ ] Subdirectories exist: `agent/`, `theory/`, `examples/`,
-      `problems/latex_inbox/`.
+      `problems/latex_inbox/`, `references/`.
 
 ## Agent usability
 
@@ -36,6 +37,8 @@ Use this checklist before declaring a generated toolkit usable.
 - [ ] TODOs are explicit and honest.
 - [ ] No unresolved `{{PLACEHOLDER}}` tokens remain outside intentional
       template files.
+- [ ] Generic v0.1 file names are acceptable, or any topic-specific renames are
+      reflected in `AGENTS.md` and `README.md`.
 
 ## Registry and validation
 

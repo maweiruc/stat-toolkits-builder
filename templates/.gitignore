@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Private/local reference material.
+references/*
+!references/README.md
+
+# Optional generated exports.
+problems/latex_inbox/problem_*/solution.pdf
+problems/latex_inbox/problem_*/solution.aux
+problems/latex_inbox/problem_*/solution.log
+problems/latex_inbox/problem_*/solution.out
