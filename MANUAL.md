@@ -59,6 +59,29 @@ The first version should prioritize:
 It should not pretend to contain a mature theory library or complete result
 registry.
 
+## File naming convention
+
+The v0.1 scaffold intentionally uses generic file names:
+
+```text
+agent/task_spec.md
+agent/triage.md
+theory/intro.md
+examples/registry.yaml
+```
+
+Mature toolkits may later rename files to topic-specific names, as in:
+
+```text
+agent/eif_agent_task_spec.md
+agent/eif_target_triage.md
+theory/semiparametric_influence_function_guide.md
+examples/eif_formula_registry.yaml
+```
+
+The generic names are not a bug. They make the first scaffold faster to create
+and easier to standardize. Rename only after the topic's protocols stabilize.
+
 ## Reference examples
 
 Use `examples/minimax_toolkit_spec.md` as the built-in reference for a
@@ -102,6 +125,18 @@ examples/registry_schema.md
 scripts/validate_registry.py
 tests/test_registry.py
 ```
+
+## What this factory does not do
+
+- It does not prove statistical theorems.
+- It does not generate a complete mature toolkit in one pass.
+- It does not replace human review of agent protocols, registries, or examples.
+- It does not treat registry entries as a substitute for derivation or theorem
+  matching.
+
+The intended workflow is iterative: generate a strong v0.1 scaffold, test it on
+trial tasks, then deepen the theory, examples, registry, and validation over
+time.
 
 ## Public trial checklist
 
