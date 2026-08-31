@@ -1,7 +1,15 @@
 # stat-toolkits-builder
 
+Current version: **v0.1.0**. See `VERSION.md` and `CHANGELOG.md`.
+
 A lightweight factory for creating first-version `stat-toolkits-*` research
 workflow repositories.
+
+This repository is part of the `stat-toolkits-*` series:
+
+- https://github.com/maweiruc/stat-toolkits-eif
+- https://github.com/maweiruc/stat-toolkits-minimax
+- https://github.com/maweiruc/stat-toolkits-builder
 
 This repository does not try to be another statistical toolkit. Its job is to
 turn a statistical topic or research task into a strong v0.1 scaffold under:
@@ -15,6 +23,10 @@ tools/stat-toolkits-<topic>/
 This builder is currently an agent-driven, semi-automated process. There is no
 fully mature one-command builder yet. Use Codex, Claude Code, or another coding
 agent with this repository open.
+
+For public trial use, the user only needs to provide a topic and optionally a
+preferred slug. The agent should do the scaffolding and then report remaining
+topic-specific gaps.
 
 ### If the topic is clear
 
@@ -149,11 +161,24 @@ and easier to standardize. Rename only after the topic's protocols stabilize.
 ## Repository Layout
 
 ```text
+VERSION.md     Current release version and scope.
+CHANGELOG.md   Release history.
+CONTRIBUTING.md Contribution and validation guidance.
 builder/       Factory workflow, questions, spec template, checklist, rubric.
 scripts/       Lightweight scaffold automation.
 templates/     Generic v0.1 toolkit scaffold templates.
 examples/      Self-contained specs distilled from the two reference toolkits.
 tools/         Output location for generated stat-toolkits-* repositories.
+```
+
+## Checks
+
+Run:
+
+```bash
+python3 templates/scripts/validate_registry.py templates/examples/registry.yaml --strict
+python3 -m unittest discover -s templates/tests
+python3 scripts/scaffold_toolkit.py --help
 ```
 
 ## What This Factory Does Not Do

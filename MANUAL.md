@@ -3,6 +3,12 @@
 This manual explains how to use the factory to create a first version of a new
 `stat-toolkits-*` repository.
 
+This repository is the lightweight builder in the `stat-toolkits-*` series. The
+full method-specific reference repositories are:
+
+- https://github.com/maweiruc/stat-toolkits-minimax
+- https://github.com/maweiruc/stat-toolkits-eif
+
 ## Short version
 
 Use this repository to produce a new scaffold at:
@@ -96,3 +102,13 @@ examples/registry_schema.md
 scripts/validate_registry.py
 tests/test_registry.py
 ```
+
+## Public trial checklist
+
+Before sharing with a new user, check:
+
+- the user can understand the first prompt in `README.md`;
+- the user knows generated toolkits go under `tools/stat-toolkits-<topic>/`;
+- `examples/minimax_toolkit_spec.md` and `examples/eif_toolkit_spec.md` are
+  enough as style references;
+- the scaffold script is presented as optional, not as the main workflow.

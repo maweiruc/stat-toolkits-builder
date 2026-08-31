@@ -3,6 +3,10 @@
 This repository is a factory for creating documentation-first statistical
 research workflow toolkits.
 
+It is the lightweight builder in the `stat-toolkits-*` series. Keep it smaller
+than the method-specific repositories; its job is to scaffold and guide, not to
+contain full statistical theory libraries.
+
 ## First files to read
 
 For any request to create or revise a toolkit scaffold, read:
